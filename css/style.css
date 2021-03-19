@@ -5,7 +5,18 @@ body {
 .tarjeta {
   width: 18rem;
 }
-.test:hover{
-    color: rgb(187, 206, 15);
-    transition: .5s;
+.test:hover {
+  color: rgb(187, 206, 15);
+  transition: 0.5s;
+}
+.bi-signpost-split:hover {
+  color: rgb(82, 82, 252);
+  transition: 0.5s;
+}
+.bi-star:hover {
+  color: rgb(187, 206, 15);
+  transition: 0.5s;
+}
+.bi-speedometer:hover {
+  color: rgb(170, 29, 29);
 }
