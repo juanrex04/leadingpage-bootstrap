@@ -5,3 +5,7 @@ body {
 .tarjeta {
   width: 18rem;
 }
+.test:hover{
+    color: rgb(187, 206, 15);
+    transition: .5s;
+}
