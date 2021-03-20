@@ -41,6 +41,12 @@ body {
 .cash:hover {
   color: rgb(2, 71, 2);
 }
+.service:hover{
+  color: rgb(3, 197, 197);
+}
+.contact:hover{
+color: rgb(0, 0, 128);
+}
 @media (max-width: 991px) {
   .imgs {
     width: 80%;
@@ -73,6 +79,12 @@ body {
   }
   .cash {
     color: rgb(2, 71, 2);
+  }
+  .service{
+    color: rgb(3, 197, 197);
+  }
+  .contact{
+  color: rgb(0, 0, 128);
   }
 
 }
