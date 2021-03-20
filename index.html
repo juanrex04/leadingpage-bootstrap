@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,9 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#home" class="nav-link" aria-current="page"
-                >Home</a
-              >
+              <a href="#home" class="nav-link" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
               <a href="#services" class="nav-link">Services</a>
@@ -136,9 +134,6 @@
     <!-- services -->
     <section id="services" class="bg-light py-5 text-center">
       <div class="container">
-        <i class="bi bi-chat-square-dots h3"></i>
-        <i class="bi bi-chat-square-dots h1"></i>
-        <i class="bi bi-chat-square-dots h3"></i>
         <h2 class="display-4 mt-3">Services!</h2>
         <p class="Lead mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis
@@ -397,8 +392,54 @@
 
     <!-- Contact us -->
     <section id="contact" class="bg-dark text-light py-5 text-center">
-      <div>
+      <div class="container">
+        <i class="bi bi-chat-square-dots h3"></i>
+        <i class="bi bi-chat-square-dots h1"></i>
+        <i class="bi bi-chat-square-dots h3"></i>
         <h1 class="display-4">Contact us!</h1>
+        <form>
+          <div class="row px-5 align-items-center text-dark">
+            <div class="col-12 col-lg-6 mb-3">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <label for="name">Name:</label>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-3">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                  required
+                />
+                <label for="floatingInput">Email address:</label>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  style="height: 150px"
+                  id="floatingTextarea"
+                  required
+                ></textarea>
+                <label for="floatingTextarea"
+                  >Comments, question and more!</label
+                >
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send!</button>
+          </div>
+        </form>
       </div>
     </section>
 
