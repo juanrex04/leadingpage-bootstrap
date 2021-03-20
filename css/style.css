@@ -47,10 +47,16 @@ body {
 .contact:hover{
 color: rgb(0, 0, 128);
 }
+.cities{
+  width: 70%;
+}
 @media (max-width: 991px) {
   .imgs {
     width: 80%;
     height: auto;
+  }
+  .cities{
+    width: 100%;
   }
   .img-pay {
     width: 35%;
