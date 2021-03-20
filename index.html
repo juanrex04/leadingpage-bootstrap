@@ -397,7 +397,7 @@
         <i class="bi bi-chat-square-dots h1"></i>
         <i class="bi bi-chat-square-dots h3"></i>
         <h1 class="display-4">Contact us!</h1>
-        <form>
+        <form id="formContact">
           <div class="row px-5 align-items-center text-dark">
             <div class="col-12 col-lg-6 mb-3">
               <div class="form-floating">
@@ -405,8 +405,9 @@
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder="Enter your name"
                   required
+                  placeholder="Enter your name"
+                  name="namePerson"
                 />
                 <label for="name">Name:</label>
               </div>
@@ -417,8 +418,9 @@
                   type="email"
                   class="form-control"
                   id="floatingInput"
-                  placeholder="name@example.com"
                   required
+                  placeholder="name@example.com"
+                  name="emailPerson"
                 />
                 <label for="floatingInput">Email address:</label>
               </div>
@@ -427,19 +429,57 @@
               <div class="form-floating">
                 <textarea
                   class="form-control"
-                  placeholder="Leave a comment here"
-                  style="height: 150px"
-                  id="floatingTextarea"
                   required
+                  placeholder="Leave a comment here"
+                  style="height: 100px"
+                  id="floatingTextarea"
+                  name="textComments"
                 ></textarea>
                 <label for="floatingTextarea"
                   >Comments, question and more!</label
                 >
               </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Send!</button>
+            <button id="btnSend" type="submit" class="btn btn-primary w-100">
+              Send!
+            </button>
+            <button
+              id="btnSending"
+              class="btn btn-primary d-none"
+              type="button"
+              disabled
+            >
+              <span
+                class="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Sending...
+            </button>
           </div>
         </form>
+      </div>
+
+      <!-- Toats -->
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+        <div
+          id="liveToast"
+          class="toast hide"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header bg-dark">
+            <strong class="me-auto text-light">Great</strong>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body text-dark">The message was sent successfully. 🤖</div>
+        </div>
       </div>
     </section>
 
@@ -491,6 +531,7 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
