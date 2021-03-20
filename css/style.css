@@ -23,10 +23,25 @@ body {
 .btns-secu:hover {
   color: rgb(11, 177, 11);
 }
-.img-pay{
+.img-pay {
   width: 15%;
 }
-@media (max-width: 728px) {
+.facebook {
+  color: rgb(0, 0, 255);
+}
+.twitter {
+  color: rgb(0, 174, 255);
+}
+.insta {
+  color: rgb(139, 6, 179);
+}
+.cards:hover {
+  color: rgb(178, 34, 34);
+}
+.cash:hover {
+  color: rgb(2, 71, 2);
+}
+@media (max-width: 991px) {
   .imgs {
     width: 80%;
     height: auto;
@@ -35,23 +50,28 @@ body {
     width: 35%;
     height: auto;
   }
-  .start-desti{
+  .start-desti {
     color: rgb(187, 206, 15);
     transition: 0.5s;
   }
-  .btns-excur{
+  .btns-excur {
     color: rgb(82, 82, 252);
     transition: 0.5s;
   }
-  .btns-tour{
+  .btns-tour {
     color: rgb(187, 206, 15);
     transition: 0.5s;
   }
-  .btns-trans{
+  .btns-trans {
     color: rgb(170, 29, 29);
   }
-  .btns-secu{
+  .btns-secu {
     color: rgb(11, 177, 11);
   }
+  .cards {
+    color: rgb(178, 34, 34);
+  }
+  .cash {
+    color: rgb(2, 71, 2);
+  }
 }
-
