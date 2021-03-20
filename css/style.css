@@ -5,27 +5,53 @@ body {
 .tarjeta {
   width: 18rem;
 }
-.test:hover {
+.start-desti:hover {
   color: rgb(187, 206, 15);
   transition: 0.5s;
 }
-.bi-signpost-split:hover {
+.btns-excur:hover {
   color: rgb(82, 82, 252);
   transition: 0.5s;
 }
-.bi-star:hover {
+.btns-tour:hover {
   color: rgb(187, 206, 15);
   transition: 0.5s;
 }
-.bi-speedometer:hover {
+.btns-trans:hover {
   color: rgb(170, 29, 29);
 }
-.bi-shield-check:hover{
+.btns-secu:hover {
   color: rgb(11, 177, 11);
 }
-@media (max-width: 728px){
-  .imgs{
+.img-pay{
+  width: 15%;
+}
+@media (max-width: 728px) {
+  .imgs {
     width: 80%;
     height: auto;
   }
+  .img-pay {
+    width: 35%;
+    height: auto;
+  }
+  .start-desti{
+    color: rgb(187, 206, 15);
+    transition: 0.5s;
+  }
+  .btns-excur{
+    color: rgb(82, 82, 252);
+    transition: 0.5s;
+  }
+  .btns-tour{
+    color: rgb(187, 206, 15);
+    transition: 0.5s;
+  }
+  .btns-trans{
+    color: rgb(170, 29, 29);
+  }
+  .btns-secu{
+    color: rgb(11, 177, 11);
+  }
 }
+
